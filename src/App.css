@@ -7,6 +7,12 @@
   font-family: "Raleway", sans-serif;
   /* overflow-x: hidden; */
   outline: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 body {
@@ -36,6 +42,12 @@ p {
 }
 
 button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background: none;
   border: none;
   outline: none;
@@ -76,6 +88,7 @@ button:hover {
 .container {
   max-width: 600px;
   margin: 20px;
+  margin-top: 0px;
   margin-bottom: 0px;
   text-align: center;
   padding-bottom: 20px;
@@ -179,12 +192,21 @@ img {
   color: #09d3ac;
 }
 
+.clock {
+}
+
 .click-the-sun {
   font-size: 30px;
 }
 
 .sunButton {
-  outline: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none !important;
   width: 300px;
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
@@ -194,6 +216,13 @@ img {
   -moz-transition-property: -moz-transform;
   -o-transition-property: -o-transform;
   transition-property: transform;
+}
+.location-wrapper {
+  margin: 5px;
+  /* display: flex; */
+  /* align-items: center;
+  align-self: center;
+  flex-direction: column; */
 }
 
 .sunny {

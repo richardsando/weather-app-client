@@ -12,9 +12,10 @@ const Clock = ({ currently, hourly, daily, requested, timezone }) => {
     <div className="clock">
       {requested ? (
         <>
-          <p>
-            {timezone} <img className="location" src={location} alt=""/>
-          </p>
+          <div className="location-wrapper">
+            {timezone} {"  "}
+            <img className="location" src={location} alt="" />
+          </div>
           <Currently currently={currently} />
           <Hourly hourly={hourly} />
           <hr />
