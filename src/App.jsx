@@ -76,6 +76,9 @@ class App extends React.Component {
 
               <button
                 className="sunButton"
+                onTap={() => {
+                  this.handleClick()
+                }}
                 onClick={() => {
                   this.handleClick();
                 }}
@@ -106,6 +109,7 @@ class App extends React.Component {
               temperature={temperature}
               summary={summary}
               requested={dataRequested}
+            
               handleClick={e => {
                 this.handleClick();
               }}
