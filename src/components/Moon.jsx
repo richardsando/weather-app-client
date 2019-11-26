@@ -8,7 +8,7 @@ const Moon = ({ daily }) => {
   const sunrise = moment(sunriseTime).format("h:mm a");
   const sunsetTime = new Date(today.sunsetTime * 1000);
   const sunset = moment(sunsetTime).format("h:mm a");
-  console.log(today);
+
   return (
     <div className="lunar">
       <div className="moon">
