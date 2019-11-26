@@ -14,7 +14,7 @@ body {
   background: linear-gradient(180deg, #001337 0%, #0d6858 100%);
   /* overflow-x: hidden; */
   overflow: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 p {
