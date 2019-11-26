@@ -1,9 +1,167 @@
 .App {
   text-align: center;
 }
+* {
+  text-decoration: none;
+  color: orange;
+  font-family: "Raleway", sans-serif;
+  max-width: 450px;
+  /* margin: auto; */
+
+
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #001337 0%, #0d6858 100%);
+  /* display: flex; */
+  margin: auto;
+  
+  
+
+}
+
+p {
+  font-size: 16px;
+}
+
+.daily-list-item {
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+}
+
+.daily-img {
+  width: 35px;
+  margin: 0px;
+  padding: 0px;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.hour-date {
+  font-size: 10px;
+}
+.hour-temp {
+  font-size: 10px;
+}
+.hour {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0px;
+}
+.hourly-img {
+  width: 25px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.hourlyContainer {
+  display: flex;
+  /* background: rgb(53, 83, 139); */
+  overflow: auto;
+  white-space: nowrap;
+  margin-bottom: 10px;
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  max-width: 600px;
+  margin: 20px;
+  margin-bottom: 0px;
+  text-align: center;
+  padding-bottom: 20px;
+  /* background: rgb(53, 83, 139); */
+}
+
+.currentlyImgWrapper {
+  display: flex;
+}
+.currently {
+  /* background: rgb(38, 70, 129); */
+  border-radius: 15px;
+  border: solid 1px orange;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+}
+.currentlyImg {
+  width: 50px;
+}
+.currentlyTemp {
+  padding: 0px;
+  margin: 0px;
+  font-size: 50px;
+}
+
+.location {
+  width: 15px;
+}
+
+.header {
+  width: 100vw;
+  overflow: hidden;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: solid 1px orange;
+}
+
+.header-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.ricardo {
+  margin: 2px;
+  font-size: 12px;
+}
+.dark-sky {
+  margin: 2px;
+  font-size: 10px;
+}
+
+.daily-container {
+  /* margin-top: 10px; */
+}
+
+.daily-temp {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.slash {
+  opacity: 0.75;
+}
+
+.min-temp {
+  opacity: 0.75;
+}
 
 .App-logo {
   height: 40vmin;
+}
+
+hr {
+  margin: 0px;
+  height: 0px;
+  border: none;
+  border-top: orange solid 1px;
+}
+
+img {
+  width: 100px;
 }
 
 .App-header {
@@ -19,4 +177,70 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.click-the-sun {
+  font-size: 30px;
+}
+
+.sunButton {
+  width: 300px;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+}
+
+.sunny {
+  width: 140px;
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.sunButton:hover {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@-webkit-keyframes sunButton {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  -webkit-animation: sunButton 2s linear infinite;
+}
+
+.footer {
+  height: 20px;
+  background-color: rgb(11, 20, 61);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
