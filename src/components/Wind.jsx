@@ -1,5 +1,5 @@
 import React from "react";
-import rounder from'../rounder'
+import rounder from "../rounder";
 
 function degToCompass(num) {
   var val = Math.floor(num / 22.5 + 0.5);
@@ -11,10 +11,14 @@ const Wind = ({ currently }) => {
   const windDirection = degToCompass(currently.windBearing);
 
   return (
-    <div>
-      <h4>Wind</h4>
-      <p>Wind speed: {rounder(currently.windSpeed)}km/h</p>
-      <p>Wind direction: {windDirection}</p>
+    <div className="wind">
+      <div>
+        <h4>Wind</h4>
+      </div>
+      <div>
+        <p>Wind speed: {rounder(currently.windSpeed)}km/h</p>
+        <p>Wind direction: {windDirection}</p>
+      </div>
     </div>
   );
 };

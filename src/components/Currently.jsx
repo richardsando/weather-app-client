@@ -1,14 +1,22 @@
 import React from "react";
 import rounder from "../rounder";
 
-const Currently = ({ currently }) => {
+const Currently = ({ currently, daily }) => {
   const icon = require(`../images/icons/${currently.icon}.svg`);
+  const today = daily.data[0];
 
   return (
     <div className="currently">
-      <p className="currentlyTemp">{rounder(currently.temperature)}°C</p>
-      <p>{currently.summary}</p>
-      <img className="currentlyImg" src={icon} alt="" />
+      <div className="currentlyTempWrapper">
+        <p className="currentlyTemp">{rounder(currently.temperature)}°</p>
+        <div  className="today-low-high">
+          <p>{rounder(today.temperatureHigh)}°</p> <p>/ {rounder(today.temperatureLow)}°</p>
+        </div>
+      </div>
+      <div>
+        <img className="currentlyImg" src={icon} alt="" />
+        <p className="summary">{currently.summary}</p>
+      </div>
     </div>
   );
 };

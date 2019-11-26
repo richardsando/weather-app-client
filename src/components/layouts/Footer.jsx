@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className="footer">
             <a href="github.com/richardsando">github.com/richardsando</a>
-            <a href="https://darksky.net/forecast">Powered by darksky.net</a>
+            <a href="https://darksky.net/forecast">darksky.net</a>
         </div>
     )
 }

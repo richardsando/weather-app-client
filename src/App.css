@@ -31,6 +31,7 @@ p {
   padding: 0px;
   display: flex;
   justify-content: space-between;
+  /* grid-row: 1; */
   align-items: center;
   margin: 0px;
 }
@@ -77,13 +78,13 @@ button:hover {
 
 .hourlyContainer {
   display: flex;
-  /* background: rgb(53, 83, 139); */
   overflow: auto;
   white-space: nowrap;
   margin-bottom: 10px;
   margin: 0px;
   padding: 0px;
   max-width: 100vw;
+  overflow-x: scroll;
 }
 .container {
   max-width: 600px;
@@ -94,26 +95,50 @@ button:hover {
   padding-bottom: 20px;
   min-height: 100vh;
   overflow-x: hidden;
-  /* background: rgb(53, 83, 139); */
 }
 
 .currentlyImgWrapper {
   display: flex;
 }
 .currently {
-  /* background: rgb(38, 70, 129); */
+  display: flex;
   border-radius: 15px;
   border: solid 1px orange;
   margin-bottom: 5px;
   padding-bottom: 10px;
+  justify-content: space-around;
+  padding: 25px;
+  align-items: center;
+  margin-top: 5px;
 }
 .currentlyImg {
-  width: 50px;
+  width: 80px;
 }
 .currentlyTemp {
   padding: 0px;
   margin: 0px;
-  font-size: 50px;
+  font-size: 100px;
+}
+.currentlyTemp>p{
+font-size: 20px;
+}
+.currently>p {
+  font-size: 20px;
+}
+
+.currentlyTempWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.today-low-high {
+display: flex;
+}
+
+.summary {
+  font-size: 20px;
 }
 
 .location {
@@ -188,11 +213,32 @@ img {
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.comfort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.clock {
+.wind {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lunar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.moom {
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-start;
+}
+
+
+.App-link {
+  color: #09d3ac;
 }
 
 .click-the-sun {
@@ -207,7 +253,7 @@ img {
   -ms-user-select: none;
   user-select: none;
   outline: none !important;
-  width: 300px;
+  /* width: 300px; */
   -webkit-transition-duration: 4s linear infinite;
   -moz-transition-duration: 4s linear infinite;
   -o-transition-duration: 4s linear infinite;
@@ -222,10 +268,14 @@ img {
 }
 
 .static-sunny {
+  margin-top: 65px;
+  margin-bottom: 35px;
   width: 140px;
 }
 
 .sunny {
+  margin-top: 65px;
+  margin-bottom: 35px;
   width: 140px;
   -webkit-animation: spin 4s linear infinite;
   -moz-animation: spin 4s linear infinite;
@@ -250,9 +300,6 @@ img {
 
 .sunButton:hover {
   cursor: pointer;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
 }
 
 @-webkit-keyframes sunButton {
@@ -279,7 +326,37 @@ img {
   align-items: center;
 }
 
-.footer>a {
+.footer > a {
   /* color: darkblue; */
-font-size: 15px;
+  font-size: 15px;
+}
+
+/* media queries */
+
+/* laptop/desktop */
+@media only screen and (min-width: 600px) {
+  body {
+    margin: auto;
+    text-align: center;
+    background: none;
+    background: linear-gradient(180deg, #001337 0%, #0d6858 100%);
+  }
+
+  .container {
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    border: solid 1px orange;
+    border-radius: 15px;
+    padding: 15px;
+    background: linear-gradient(180deg, #001337 0%, #0d6858 100%);
+  }
+  .header {
+    background: rgb(3, 3, 31);
+  }
+  .currently {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 }
