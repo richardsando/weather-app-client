@@ -324,6 +324,7 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-top: solid 1px orange;
 }
 
 .footer > a {
