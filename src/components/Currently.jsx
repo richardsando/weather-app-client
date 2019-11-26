@@ -3,7 +3,6 @@ import rounder from "../rounder";
 
 const Currently = ({ currently }) => {
   const icon = require(`../images/icons/${currently.icon}.svg`);
-  console.log(currently);
 
   return (
     <div className="currently">
