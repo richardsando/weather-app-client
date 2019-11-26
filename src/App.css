@@ -269,11 +269,17 @@ img {
 }
 
 .footer {
-  height: 20px;
+  height: 30px;
   background-color: rgb(11, 20, 61);
   position: relative;
   bottom: 0;
   width: 100%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+
+.footer>a {
+  /* color: darkblue; */
+font-size: 15px;
 }

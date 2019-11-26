@@ -8,6 +8,7 @@ import sunny from "../images/icons/sunny.svg";
 import location from "../images/icons/location.svg";
 
 const Clock = ({ currently, hourly, daily, requested, timezone }) => {
+  console.log(hourly)
   return (
     <div className="clock">
       {requested ? (
