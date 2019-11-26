@@ -76,18 +76,15 @@ class App extends React.Component {
 
               <button
                 className="sunButton"
-                onTap={() => {
-                  this.handleClick()
-                }}
                 onClick={() => {
                   this.handleClick();
                 }}
               >
-                <img className="sunny" src={sunny} alt="" />
+                <img className="static-sunny" src={sunny} alt="" />
               </button>
               <p className="click-the-sun">Click the sun!</p>
             </div>
-            <Footer/>
+            <Footer />
           </>
         );
       }
@@ -109,7 +106,6 @@ class App extends React.Component {
               temperature={temperature}
               summary={summary}
               requested={dataRequested}
-            
               handleClick={e => {
                 this.handleClick();
               }}
