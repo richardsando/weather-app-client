@@ -1,5 +1,5 @@
 import React from "react";
-import rounder from "../rounder";
+import rounder from "../helperMethods/rounder";
 
 function degToCompass(num) {
   var val = Math.floor(num / 22.5 + 0.5);

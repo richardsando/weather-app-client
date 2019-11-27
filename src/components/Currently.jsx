@@ -1,5 +1,5 @@
 import React from "react";
-import rounder from "../rounder";
+import rounder from "../helperMethods/rounder";
 
 const Currently = ({ currently, daily }) => {
   const icon = require(`../images/icons/${currently.icon}.svg`);

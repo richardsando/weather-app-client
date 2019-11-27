@@ -1,5 +1,5 @@
 import React from "react";
-import rounder from'../rounder'
+import rounder from'../helperMethods/rounder'
 import moment from 'moment'
 
 const Hourly = props => {
